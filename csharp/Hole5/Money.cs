@@ -21,7 +21,7 @@ namespace Hole5 {
 
             return Create(value + other.value, other.currency);
         }
-
+        
         public Money Minus(Money other) {
             if (!currency.Equals(other.currency)) {
                 throw new Incalculable();
